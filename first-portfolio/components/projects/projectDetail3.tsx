@@ -4,19 +4,19 @@ const roboto = Roboto({
   weight: "900",
   subsets: ["latin"],
 });
-const ProjectDetail = () => {
+const ProjectDetail3 = () => {
   return (
     <div>
       <div>
         <div className="project-number font-bold text-[10vw] text-[#363636]">
-          01
+          03
         </div>
         <p className={`${roboto.className} text-[3vw] font-extrabold`}>
-          HOT STOCK
+          책도네
         </p>
-        <p>지금 가장 핫한 주식 테마와 종목은?</p>
+        <p>중고 도서 기부하기</p>
         <div className="my-10" />
-        <p className="italic">23.08.28 ~ 23.10.06</p>
+        <p className="italic">23.10.10 ~ 23.11.17</p>
         <div className="my-10" />
         <div className="flex justify-between">
           <div>
@@ -25,13 +25,12 @@ const ProjectDetail = () => {
           </div>
           <div>
             <p className="">참여 인원</p>
-            <p>Back-End 5 | Front-End 1</p>
+            <p>Back-End 4 | Front-End 1</p>
           </div>
         </div>
         <div className="my-10" />
         <p className="bg-white rounded-lg p-5 text-black font-bold">
-          ✨ 실시간으로 뉴스를 크롤링하여 뉴스의 키워드를 추출하고, 키워드와
-          관련된 주식 테마와 해당하는 종목들을 추천합니다.
+          ✨ 중고 도서를 주고받으며 지속적인 기부 선순환을 유도하는 서비스
         </p>
         <div className="my-10" />
         <p className="">개발 환경</p>
@@ -40,37 +39,34 @@ const ProjectDetail = () => {
         <div className="my-2" />
         <ul className="bg-white rounded-lg p-5 text-black">
           <li>
-            10분 단위로 <strong>실시간 뉴스를 크롤링</strong>하여 키워드를
-            추출해 제공합니다
+            책의 ISBN 바코드를 조회하여 기부하고자 하는 책을 등록해 기부할 수
+            있습니다.
+          </li>
+          <li>기부자에게 1대1 채팅을 신청하여 논의할 수 있습니다.</li>
+          <li>
+            각각의 책에 대한 히스토리를 기록, 미래의 책 소유자에게 책의 여정을
+            전달합니다.
           </li>
           <li>
-            빈도수에 따라 키워드를 랭킹화하고 그 결과를{" "}
-            <strong>워드클라우드</strong>로 표현합니다
-          </li>
-          <li>
-            각 키워드와 연관된 주식 테마를 추천하고, 테마에 따른 종목 내역 및
-            종목의 실시간 정보를 제공합니다.
+            책갈피라는 재화를 활용하여 기부 도서 수 대비 기부 받을 횟수를 제한,
+            선순환을 유도합니다.
           </li>
         </ul>
         <div className="my-10" />
         <p className="">담당 업무</p>
         <div className="my-2" />
         <ul className="bg-white rounded-lg p-5 text-black">
+          <li>Flutter를 활용해 모바일 앱 어플리케이션을 구현하였습니다</li>
           <li>
-            Next.js 13의 App Routing을 적용, Layout 정의를 통해 불필요한
-            리렌더링을 방지하였습니다.
+            Hook Widget을 활용하여 보다 직관적이고 간편한 코드를 작성하였습니다
           </li>
           <li>
-            추출된 키워드의 상위 50개를 지구가 회전하는 듯한 워드클라우드의
-            형태로 표현하여 시각적인 요소를 더했습니다.
-          </li>
-          <li>
-            Tailwind CSS를 활용, 사이트의 주요 페이지를 반응형 웹으로
-            작업하였습니다.
+            Riverpod을 활용한 상태관리로, 에러를 최소화하며 전역적인 상태관리가
+            가능토록 진행하였습니다.
           </li>
         </ul>
       </div>
     </div>
   );
 };
-export default ProjectDetail;
+export default ProjectDetail3;
