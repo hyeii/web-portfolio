@@ -4,9 +4,8 @@ const AboutMe = () => {
       <h1>About Me</h1>
       <hr />
       <div className="my-24">
-        <p className="about text-2xl">
-          <span className="about font-bold">즐거운 개발</span>을 추구합니다.{" "}
-          <br />
+        <p className="text-2xl">
+          <span className="font-bold">즐거운 개발</span>을 추구합니다. <br />
           두려워하지 않는 새로운 시도를 통해 <br />
           끝없이 정진하는 프론트엔드 개발자로 나아가겠습니다.
         </p>

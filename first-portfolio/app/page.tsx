@@ -76,23 +76,25 @@ const Home = () => {
                 Projects
               </div>
               <br />
-              <div
-                className="hover:underline decoration-solid cursor-pointer"
-                onClick={project1Click}
-              >
-                01
-              </div>
-              <div
-                className="hover:underline decoration-solid cursor-pointer"
-                onClick={project2Click}
-              >
-                02
-              </div>
-              <div
-                className="hover:underline decoration-solid cursor-pointer"
-                onClick={project3Click}
-              >
-                03
+              <div className="sm:hidden lg:block">
+                <div
+                  className="hover:underline decoration-solid cursor-pointer"
+                  onClick={project1Click}
+                >
+                  01
+                </div>
+                <div
+                  className="hover:underline decoration-solid cursor-pointer"
+                  onClick={project2Click}
+                >
+                  02
+                </div>
+                <div
+                  className="hover:underline decoration-solid cursor-pointer"
+                  onClick={project3Click}
+                >
+                  03
+                </div>
               </div>
             </div>
           </div>
