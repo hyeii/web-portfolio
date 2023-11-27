@@ -45,11 +45,11 @@ const ProjectDetail = () => {
             <p>Back-End 5 | Front-End 1</p>
           </div>
         </div>
-        <div className="my-10" />
-        <p className="bg-white rounded-lg p-5 text-black font-bold">
+        <div className="my-24" />
+        {/* <p className="bg-white rounded-lg p-5 text-black font-bold">
           ✨ 실시간으로 뉴스를 크롤링하여 뉴스의 키워드를 추출하고, 키워드와
           관련된 주식 테마와 해당하는 종목들을 추천합니다.
-        </p>
+        </p> */}
       </div>
     </div>
   );

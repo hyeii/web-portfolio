@@ -45,10 +45,10 @@ const ProjectDetail3 = () => {
             <p>Back-End 4 | Front-End 1</p>
           </div>
         </div>
-        <div className="my-10" />
-        <p className="bg-white rounded-lg p-5 text-black font-bold">
+        <div className="my-24" />
+        {/* <p className="bg-white rounded-lg p-5 text-black font-bold">
           ✨ 중고 도서를 주고받으며 지속적인 기부 선순환을 유도하는 서비스
-        </p>
+        </p> */}
       </div>
     </div>
   );

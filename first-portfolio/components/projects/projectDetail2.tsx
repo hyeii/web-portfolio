@@ -45,11 +45,11 @@ const ProjectDetail2 = () => {
             <p>Back-End 4 | Front-End 2</p>
           </div>
         </div>
-        <div className="my-10" />
-        <p className="bg-white rounded-lg p-5 text-black font-bold">
+        <div className="my-24" />
+        {/* <p className="bg-white rounded-lg p-5 text-black font-bold">
           ✨ 스터디방을 개설하여 면접관, 면접자의 역할을 바꿔가며 면접 스터디를
           진행할 수 있습니다.
-        </p>
+        </p> */}
       </div>
     </div>
   );
