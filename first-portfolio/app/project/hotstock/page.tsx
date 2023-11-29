@@ -27,7 +27,7 @@ const Page = () => {
         target="_blank"
         className="hover:font-extrabold"
         href={
-          "https://alert-engine-558.notion.site/Hot-Stock-8c1547fa048c42ee847aa23c853cd66d?pvs=4"
+          "https://alert-engine-558.notion.site/Hot-Stock-583df12f53ec417ea20441367560bfac?pvs=4"
         }
       >
         더 알아보기 &gt;

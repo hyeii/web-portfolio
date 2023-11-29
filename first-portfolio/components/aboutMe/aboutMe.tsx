@@ -14,7 +14,7 @@ const AboutMe = () => {
         <br />
         <p>🌃 윤혜민</p>
         <p>✉️ hyeii326@gmail.com</p>
-        <div className="flex">
+        {/* <div className="flex">
           <svg
             className="w-5 h-5"
             role="img"
@@ -30,7 +30,7 @@ const AboutMe = () => {
               hyeii
             </a>
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   );
