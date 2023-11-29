@@ -42,10 +42,10 @@ const Home = () => {
   };
   return (
     <main className="flex flex-col h-screen lg:flex-row">
-      <div className="lg:w-1/3 p-10 content-between ">
+      <div className="lg:w-1/3 px-10 py-7 content-between ">
         <div>
           <h2
-            className={`${roboto.className} name text-[5vw] text-transparent font-bold lg:hidden`}
+            className={`${roboto.className} name text-4xl text-transparent font-bold lg:hidden`}
           >
             YOON HYEMIN
           </h2>
@@ -76,7 +76,7 @@ const Home = () => {
                 Projects
               </div>
               <br />
-              <div className="sm:hidden lg:block">
+              <div className="hidden lg:block">
                 <div
                   className="hover:underline decoration-solid cursor-pointer"
                   onClick={project1Click}

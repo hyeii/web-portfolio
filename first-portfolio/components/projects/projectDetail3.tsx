@@ -13,7 +13,9 @@ const ProjectDetail3 = () => {
           03
         </div>
         <div className="flex content-center items-center">
-          <p className={`${roboto.className} text-[3vw] font-extrabold`}>
+          <p
+            className={`${roboto.className} text-4xl lg:text-[3vw] font-extrabold`}
+          >
             책도네
           </p>
           <div className="mx-10" />

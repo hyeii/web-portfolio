@@ -18,11 +18,11 @@ export default function AboutUsLayout({
   return (
     <>
       <main className="flex flex-col h-screen lg:flex-row">
-        <div className="lg:w-1/5 p-10 content-between ">
+        <div className="lg:w-1/5 px-10 py-5 content-between ">
           <div>
             <Link href={"/"}>
               <h2
-                className={`${roboto.className} sub-name text-[3vw] text-transparent font-bold lg:hidden`}
+                className={`${roboto.className} sub-name text-3xl text-transparent font-bold lg:hidden`}
               >
                 YOON HYEMIN
               </h2>
