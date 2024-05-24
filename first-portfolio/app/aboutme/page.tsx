@@ -1,10 +1,10 @@
-const AboutMe = () => {
+const AboutMePage = () => {
   return (
     <div>
       <h1>About Me</h1>
       <hr />
       <div className="my-24">
-        <p className="text-2xl">
+        <p>
           <span className="font-bold">즐거운 개발</span>을 추구합니다. <br />
           두려워하지 않는 새로운 시도를 통해 <br />
           끝없이 정진하는 프론트엔드 개발자로 나아가겠습니다.
@@ -14,7 +14,7 @@ const AboutMe = () => {
         <br />
         <p>🌃 윤혜민</p>
         <p>✉️ hyeii326@gmail.com</p>
-        {/* <div className="flex">
+        <div className="flex">
           <svg
             className="w-5 h-5"
             role="img"
@@ -30,10 +30,10 @@ const AboutMe = () => {
               hyeii
             </a>
           </p>
-        </div> */}
+        </div>
       </div>
     </div>
   );
 };
 
-export default AboutMe;
+export default AboutMePage;
