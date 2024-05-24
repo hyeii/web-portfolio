@@ -1,19 +1,36 @@
+import classNames from "classnames";
+import { Noto_Serif_KR } from "next/font/google";
+
+const notoSerifKr = Noto_Serif_KR({
+  weight: "400",
+  subsets: ["latin"],
+});
+
+const notoSerifKr_bold = Noto_Serif_KR({
+  weight: "900",
+  subsets: ["latin"],
+});
+
+const serif = classNames(`${notoSerifKr.className}`);
+
 const AboutMePage = () => {
   return (
     <div>
       <h1>About Me</h1>
       <hr />
       <div className="my-24">
-        <p>
-          <span className="font-bold">즐거운 개발</span>을 추구합니다. <br />
+        <p className={`${notoSerifKr.className}`}>
+          <span className={`${notoSerifKr_bold.className}`}>즐거운 개발</span>
+          을 추구합니다. <br />
           두려워하지 않는 새로운 시도를 통해 <br />
           끝없이 정진하는 프론트엔드 개발자로 나아가겠습니다.
         </p>
         <div className="my-24" />
-        <p>🌊 삼성 청년 소프트웨어 아카데미 9기</p>
+        <span className={serif}>🌊 삼성 청년 소프트웨어 아카데미 9기</span>
         <br />
-        <p>🌃 윤혜민</p>
-        <p>✉️ hyeii326@gmail.com</p>
+        <span className={serif}>🌃 윤혜민</span>
+        <br />
+        <span>✉️ hyeii326@gmail.com</span>
         <div className="flex">
           <svg
             className="w-5 h-5"

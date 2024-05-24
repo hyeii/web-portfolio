@@ -19,12 +19,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <main className="flex h-screen">
-          <SideBar />
-          <div className="bg-[#363636] text-white p-[5vw] w-full overflow-auto">
-            {children}
-          </div>
-        </main>
+        <SideBarProvider>
+          <main className="flex h-screen">
+            <SideBar />
+            <div className="bg-[#363636] text-white p-[5vw] w-full overflow-auto">
+              {children}
+            </div>
+          </main>
+        </SideBarProvider>
       </body>
     </html>
   );

@@ -9,10 +9,10 @@ const SkillPage = () => {
       <div>
         <h1>Skill</h1>
         <hr />
-        <div className="my-24">
+        <div className="my-12">
           <div className="grid grid-cols-[1fr_5fr] gap-7">
             <div>
-              <span>familiar</span>
+              <span className="text-green-400 font-bold">familiar</span>
             </div>
             <div>
               {familiarList.map((skill, index) => (
@@ -20,7 +20,7 @@ const SkillPage = () => {
               ))}
             </div>
             <div>
-              <span>tried</span>
+              <span className="text-yellow-200 font-bold">tried</span>
             </div>
             <div>
               {triedList.map((skill, index) => (

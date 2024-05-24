@@ -2,6 +2,8 @@
 
 import { Roboto } from "next/font/google";
 import Link from "next/link";
+import { SideBarProvider, useSideBarContext } from "../context/SideBarContext";
+import classNames from "classnames";
 
 const roboto = Roboto({
   weight: "900",
@@ -9,24 +11,59 @@ const roboto = Roboto({
 });
 
 const SideBar = () => {
+  const { isMain, setIsMain } = useSideBarContext();
+
+  const setIsNotMain = () => {
+    if (!isMain) return;
+    setIsMain(false);
+  };
+
+  const setMain = () => {
+    if (isMain) return;
+    setIsMain(true);
+  };
+
+  const divCss = classNames(
+    "px-10 py-7 flex flex-col justify-between transition-all duration-700",
+    {
+      "w-full": isMain,
+      "w-1/3": !isMain,
+    }
+  );
+
+  const h2Title = classNames(
+    `${roboto.className} name text-transparent font-bold transition-all duration-700`,
+    {
+      "text-mainTitle": isMain,
+      "text-subTitle": !isMain,
+    }
+  );
+
   return (
     <>
-      <div className="w-1/3 px-10 py-7 content-between">
+      <div className={divCss}>
         <div>
           <Link href={"/"}>
-            <h2
-              className={`${roboto.className} name text-4xl text-transparent font-bold`}
-            >
-              YOON HYEMIN
+            <h2 className={h2Title} onClick={setMain}>
+              YOON
+              <br />
+              HYEMIN
             </h2>
           </Link>
         </div>
         <div>
-          <Link href={"/aboutme"}>about me</Link>
+          <Link href={"/aboutme"} onClick={setIsNotMain}>
+            about me
+          </Link>
           <br />
-          <Link href={"/skills"}>skills</Link>
+          <Link href={"/skills"} onClick={setIsNotMain}>
+            skills
+          </Link>
           <br />
-          <Link href={"/project"}>projects</Link>
+          <Link href={"/project"} onClick={setIsNotMain}>
+            projects
+          </Link>
+          <div className="my-60" />
         </div>
       </div>
     </>
