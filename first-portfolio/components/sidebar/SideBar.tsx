@@ -4,6 +4,9 @@ import { Roboto } from "next/font/google";
 import Link from "next/link";
 import { SideBarProvider, useSideBarContext } from "../context/SideBarContext";
 import classNames from "classnames";
+import { useRecoilState, useRecoilValueLoadable } from "recoil";
+import { mainCompoState, mainState } from "@/atoms/atoms";
+import { useEffect } from "react";
 
 const roboto = Roboto({
   weight: "900",
@@ -11,7 +14,8 @@ const roboto = Roboto({
 });
 
 const SideBar = () => {
-  const { isMain, setIsMain } = useSideBarContext();
+  const [isMain, setIsMain] = useRecoilState(mainState);
+  const [mainCompo, setMainCompo] = useRecoilState(mainCompoState);
 
   const setIsNotMain = () => {
     if (!isMain) return;
@@ -23,6 +27,26 @@ const SideBar = () => {
     setIsMain(true);
   };
 
+  const handleMain = () => {
+    setMain();
+    setMainCompo("main");
+  };
+
+  const handleAboutMe = () => {
+    setIsNotMain();
+    setMainCompo("aboutme");
+  };
+
+  const handleSkills = () => {
+    setIsNotMain();
+    setMainCompo("skills");
+  };
+
+  const handleProjects = () => {
+    setIsNotMain();
+    setMainCompo("projects");
+  };
+
   const divCss = classNames(
     "px-10 py-7 flex flex-col justify-between transition-all duration-700",
     {
@@ -32,7 +56,7 @@ const SideBar = () => {
   );
 
   const h2Title = classNames(
-    `${roboto.className} name text-transparent font-bold transition-all duration-700`,
+    `${roboto.className} name text-transparent font-bold transition-all duration-700 cursor-pointer`,
     {
       "text-mainTitle": isMain,
       "text-subTitle": !isMain,
@@ -43,26 +67,33 @@ const SideBar = () => {
     <>
       <div className={divCss}>
         <div>
-          <Link href={"/"}>
-            <h2 className={h2Title} onClick={setMain}>
-              YOON
-              <br />
-              HYEMIN
-            </h2>
-          </Link>
+          <h2 className={h2Title} onClick={handleMain}>
+            YOON
+            <br />
+            HYEMIN
+          </h2>
         </div>
         <div>
-          <Link href={"/aboutme"} onClick={setIsNotMain}>
+          <span
+            className="cursor-pointer hover:font-bold"
+            onClick={handleAboutMe}
+          >
             about me
-          </Link>
+          </span>
           <br />
-          <Link href={"/skills"} onClick={setIsNotMain}>
+          <span
+            className="cursor-pointer hover:font-bold"
+            onClick={handleSkills}
+          >
             skills
-          </Link>
+          </span>
           <br />
-          <Link href={"/project"} onClick={setIsNotMain}>
+          <span
+            className="cursor-pointer hover:font-bold"
+            onClick={handleProjects}
+          >
             projects
-          </Link>
+          </span>
           <div className="my-60" />
         </div>
       </div>

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.scss";
 import SideBar from "@/components/sidebar/SideBar";
-import { SideBarProvider } from "@/components/context/SideBarContext";
+import RecoilRootWrapper from "@/components/context/RecoilWrapper";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,14 +19,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <SideBarProvider>
+        <RecoilRootWrapper>
           <main className="flex h-screen">
             <SideBar />
             <div className="bg-[#363636] text-white p-[5vw] w-full overflow-auto">
               {children}
             </div>
           </main>
-        </SideBarProvider>
+        </RecoilRootWrapper>
       </body>
     </html>
   );

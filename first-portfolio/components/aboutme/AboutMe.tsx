@@ -13,7 +13,7 @@ const notoSerifKr_bold = Noto_Serif_KR({
 
 const serif = classNames(`${notoSerifKr.className}`);
 
-const AboutMePage = () => {
+const AboutMe = () => {
   return (
     <div>
       <h1>About Me</h1>
@@ -53,4 +53,4 @@ const AboutMePage = () => {
   );
 };
 
-export default AboutMePage;
+export default AboutMe;
