@@ -67,33 +67,41 @@ const SideBar = () => {
     <>
       <div className={divCss}>
         <div>
-          <h2 className={h2Title} onClick={handleMain}>
-            YOON
-            <br />
-            HYEMIN
-          </h2>
+          <Link href={"/"}>
+            <h2 className={h2Title} onClick={handleMain}>
+              YOON
+              <br />
+              HYEMIN
+            </h2>
+          </Link>
         </div>
         <div>
-          <span
-            className="cursor-pointer hover:font-bold"
-            onClick={handleAboutMe}
-          >
-            about me
-          </span>
+          <Link href={"/"}>
+            <span
+              className="cursor-pointer hover:font-bold"
+              onClick={handleAboutMe}
+            >
+              about me
+            </span>
+          </Link>
           <br />
-          <span
-            className="cursor-pointer hover:font-bold"
-            onClick={handleSkills}
-          >
-            skills
-          </span>
+          <Link href={"/"}>
+            <span
+              className="cursor-pointer hover:font-bold"
+              onClick={handleSkills}
+            >
+              skills
+            </span>
+          </Link>
           <br />
-          <span
-            className="cursor-pointer hover:font-bold"
-            onClick={handleProjects}
-          >
-            projects
-          </span>
+          <Link href={"/"}>
+            <span
+              className="cursor-pointer hover:font-bold"
+              onClick={handleProjects}
+            >
+              projects
+            </span>
+          </Link>
           <div className="my-60" />
         </div>
       </div>
