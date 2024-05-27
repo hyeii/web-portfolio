@@ -13,6 +13,7 @@ interface environmentType {
 }
 
 export interface projectType {
+  order: string;
   title: string;
   subtitle: string;
   date: string;
@@ -24,4 +25,10 @@ export interface projectType {
   myRole: string[];
   after: string[];
   githubLink: string;
+}
+
+export interface skillType {
+  skill: string;
+  content: string;
+  ability: string;
 }
