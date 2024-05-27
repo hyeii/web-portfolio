@@ -40,6 +40,7 @@ export const thumbnailList: thumbnailType[] = [
 ];
 
 export const p1Detail: projectType = {
+  order: "01",
   title: "HOT STOCK",
   subtitle: "실시간 키워드 기반 주식 추천 서비스",
   date: "23.08.28 ~ 23.10.06",
@@ -72,6 +73,7 @@ export const p1Detail: projectType = {
 };
 
 export const p2Detail: projectType = {
+  order: "02",
   title: "밀어 : 뷰",
   subtitle: "취준생을 위한 화상 면접 스터디 플랫폼",
   date: "23.07.10 ~ 23.08.18",
@@ -109,6 +111,7 @@ export const p2Detail: projectType = {
 };
 
 export const p3Detail: projectType = {
+  order: "03",
   title: "책도네",
   subtitle: "중고 도서 기부를 통한 선순환 지속 플랫폼",
   date: "23.10.10 ~ 23.11.17",
@@ -148,6 +151,7 @@ export const p3Detail: projectType = {
 };
 
 export const p4Detail: projectType = {
+  order: "04",
   title: "데일리 메이트",
   subtitle: "일상의 모든 것을 한번에 관리하는 우리의 다이어리",
   date: "24.01.02 ~ 23.02.27",

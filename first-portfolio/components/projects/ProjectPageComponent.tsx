@@ -38,7 +38,7 @@ const ProjectPage = ({ project }: props) => {
   return (
     <div>
       <div className="project-number font-bold text-[10vw] text-[#363636]">
-        01
+        {project.order}
       </div>
       <div className="flex content-center items-center">
         <p
