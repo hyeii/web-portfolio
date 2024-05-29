@@ -18,6 +18,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <meta
+        name="google-site-verification"
+        content="05aWC6e41zzIGNNxbQ5ADhDKysMMK6q5_k87zd8_9bc"
+      />
       <body className={inter.className}>
         <RecoilRootWrapper>
           <main className="flex h-screen">
