@@ -120,7 +120,7 @@ const ProjectPage = ({ project }: props) => {
       </ul>
       <div className="my-12" />
       <div>
-        <ImageList imageList={p1Images} />
+        <ImageList imageList={project.images} />
       </div>
     </div>
   );
