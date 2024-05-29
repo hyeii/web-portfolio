@@ -44,7 +44,7 @@ export const p1Detail: projectType = {
   title: "HOT STOCK",
   subtitle: "실시간 키워드 기반 주식 추천 서비스",
   date: "23.08.28 ~ 23.10.06",
-  role: "UI/UX, Front-Dnd",
+  role: "UI/UX, Front-End",
   member: "Back-End 5 | Front-End 1",
   goal: "현재 가장 뜨거운 트렌드와 주식을 관련짓고 싶은 사람들, 또 주식을 처음 시작하며 사람들에게 관심받는 종목이 궁금할 사람들에게 관련 정보를 용이하게 제공하고자 함.",
   environment: {
@@ -77,7 +77,7 @@ export const p2Detail: projectType = {
   title: "밀어 : 뷰",
   subtitle: "취준생을 위한 화상 면접 스터디 플랫폼",
   date: "23.07.10 ~ 23.08.18",
-  role: "UI/UX, Front-Dnd",
+  role: "UI/UX, Front-End",
   member: "Back-End 4 | Front-End 2",
   goal: "다양한 취업 관련 플랫폼에 비해 실질적으로 도움을 줄 수 있는 화상 면접 스터디 관련 서비스는 존재하지 않아, 취준생에게 도움이 되고자 기획.",
   environment: {
@@ -155,7 +155,7 @@ export const p4Detail: projectType = {
   title: "데일리 메이트",
   subtitle: "일상의 모든 것을 한번에 관리하는 우리의 다이어리",
   date: "24.01.02 ~ 23.02.27",
-  role: "UI/UX, Front-Dnd",
+  role: "UI/UX, Front-End",
   member: "Back-End 4 | Front-End 1 | Ful-Stack 1",
   goal: "온라인으로 모든 것을 해결할 수 있는 요즈음의 MZ세대를 위해 다이어리, 가계부, 할 일 관리를 한번에 해결할 수 있는 통합 교류 플랫폼",
   environment: {
