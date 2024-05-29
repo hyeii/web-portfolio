@@ -70,6 +70,14 @@ export const p1Detail: projectType = {
     "프로젝트 도중 일부 종목의 상장 폐지로 인한 오류 발생. 조회가 되지 않는 종목 코드를 서버와 프론트단 모드에서 에러처리를 진행했으며 개발 그 자체뿐만 아니라 프로젝트 소재에 대한 충분한 이해가 미흡했음을 인지함",
   ],
   githubLink: "https://github.com/hyeii/new-hot-stock",
+  images: [
+    "/p1/p1_intro.jpg",
+    "/p1/p1_main.jpg",
+    "/p1/p1_ranking.png",
+    "/p1/p1_stock.png",
+    "/p1/p1_theme.png",
+    "/p1/p1_themeDetail.png",
+  ],
 };
 
 export const p2Detail: projectType = {
@@ -108,6 +116,14 @@ export const p2Detail: projectType = {
     "상태관리 뿐만 아니라 새로운 기술을 적용함에 있어 보다 구체적인 이해가 필요함을 인지",
   ],
   githubLink: "https://github.com/hyeii/mirror-view",
+  images: [
+    "/p2/p2_main.png",
+    "/p2/p2_studyrooms.png",
+    "/p2/p2_ready.png",
+    "/p2/p2_studyFriend.png",
+    "/p2/p2_interviewee.png",
+    "/p2/p2_mypage.png",
+  ],
 };
 
 export const p3Detail: projectType = {
@@ -148,6 +164,14 @@ export const p3Detail: projectType = {
     "도서가 등록되면 기부자의 정보와 도서의 정보가 함께 저장되고, 기부의 반복으로 저장이 반복되는데 이 과정에서 블록체인을 도입한다면 보다 효율적인 도서 관리가 가능할 것이라고 추측되지만 기술적 한계로 시도하지 못함",
   ],
   githubLink: "https://github.com/hyeii/book-donations",
+  images: [
+    "/p2/p2_main.png",
+    "/p2/p2_studyrooms.png",
+    "/p2/p2_ready.png",
+    "/p2/p2_studyFriend.png",
+    "/p2/p2_interviewee.png",
+    "/p2/p2_mypage.png",
+  ],
 };
 
 export const p4Detail: projectType = {
@@ -181,4 +205,12 @@ export const p4Detail: projectType = {
     "달력 컴포넌트를 직접 구현함에 있어 코드의 가독성이 저하되어 적절한 상태관리를 통해 코드의 가독성을 높일 필요성을 느낌",
   ],
   githubLink: "https://github.com/DailyMate/DailyMate",
+  images: [
+    "/p2/p2_main.png",
+    "/p2/p2_studyrooms.png",
+    "/p2/p2_ready.png",
+    "/p2/p2_studyFriend.png",
+    "/p2/p2_interviewee.png",
+    "/p2/p2_mypage.png",
+  ],
 };

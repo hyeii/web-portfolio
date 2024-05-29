@@ -25,6 +25,7 @@ export interface projectType {
   myRole: string[];
   after: string[];
   githubLink: string;
+  images: string[];
 }
 
 export interface skillType {
