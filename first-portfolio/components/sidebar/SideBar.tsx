@@ -46,7 +46,7 @@ const SideBar = () => {
   };
 
   const divCss = classNames(
-    "px-10 py-7 flex flex-col justify-between transition-all duration-700",
+    "lg:px-10 px-5 lg:py-7 py-2 flex flex-col justify-between transition-all duration-700",
     {
       "w-full": isMain,
       "lg:w-1/3 w-full": !isMain,
@@ -54,7 +54,7 @@ const SideBar = () => {
   );
 
   const h2Title = classNames(
-    `${roboto.className} name text-transparent font-bold transition-all duration-700 cursor-pointer`,
+    `${roboto.className} name lg:text-transparent font-bold transition-all duration-700 cursor-pointer`,
     {
       "lg:text-mainTitle text-xl": isMain,
       "lg:text-subTitle": !isMain,
@@ -77,7 +77,7 @@ const SideBar = () => {
             </h2>
           </Link>
         </div>
-        <div className="lg:block flex justify-between lg:h-full h-10">
+        <div className="lg:block flex justify-between lg:h-full h-7">
           <Link href={"/"}>
             <span
               className="cursor-pointer hover:font-bold"
