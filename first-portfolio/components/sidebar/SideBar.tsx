@@ -2,11 +2,9 @@
 
 import { Roboto } from "next/font/google";
 import Link from "next/link";
-import { SideBarProvider, useSideBarContext } from "../context/SideBarContext";
 import classNames from "classnames";
-import { useRecoilState, useRecoilValueLoadable } from "recoil";
+import { useRecoilState } from "recoil";
 import { mainCompoState, mainState } from "@/atoms/atoms";
-import { useEffect } from "react";
 
 const roboto = Roboto({
   weight: "900",
@@ -51,17 +49,22 @@ const SideBar = () => {
     "px-10 py-7 flex flex-col justify-between transition-all duration-700",
     {
       "w-full": isMain,
-      "w-1/3": !isMain,
+      "lg:w-1/3 w-full": !isMain,
     }
   );
 
   const h2Title = classNames(
     `${roboto.className} name text-transparent font-bold transition-all duration-700 cursor-pointer`,
     {
-      "text-mainTitle": isMain,
-      "text-subTitle": !isMain,
+      "lg:text-mainTitle text-xl": isMain,
+      "lg:text-subTitle": !isMain,
     }
   );
+
+  const brStyle = classNames("lg:block", {
+    block: isMain,
+    hidden: !isMain,
+  });
 
   return (
     <>
@@ -69,13 +72,12 @@ const SideBar = () => {
         <div>
           <Link href={"/"}>
             <h2 className={h2Title} onClick={handleMain}>
-              YOON
-              <br />
+              YOON <br className={brStyle} />
               HYEMIN
             </h2>
           </Link>
         </div>
-        <div>
+        <div className="lg:block flex justify-between lg:h-full h-10">
           <Link href={"/"}>
             <span
               className="cursor-pointer hover:font-bold"

@@ -5,13 +5,15 @@ import TypewriterComponent, { TypewriterClass } from "typewriter-effect";
 
 const MainText = () => {
   return (
-    <TypewriterComponent
-      options={{
-        strings: ["Hi, I'm Front-end Developer"],
-        autoStart: true,
-        loop: true,
-      }}
-    />
+    <div className="h-full">
+      <TypewriterComponent
+        options={{
+          strings: ["Hi, I'm Front-end Developer"],
+          autoStart: true,
+          loop: true,
+        }}
+      />
+    </div>
   );
 };
 

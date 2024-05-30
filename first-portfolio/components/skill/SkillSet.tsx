@@ -8,10 +8,10 @@ const roboto_mono = Roboto_Mono({
 
 const SkillSet = ({ skill, content, ability }: skillType) => {
   return (
-    <div className="grid gap-1 grid-cols-[1fr_1fr_3fr] my-7">
+    <div className="lg:grid lg:gap-1 lg:grid-cols-[1fr_1fr_3fr] lg:my-7 my-12">
       <div className="">
         <span
-          className={`mx-2 rounded-3xl px-3 py-2 bg-white text-black ${roboto_mono.className} `}
+          className={`lg:mx-2 rounded-3xl px-3 lg:py-2  bg-white text-black ${roboto_mono.className} `}
         >
           {skill}
         </span>
