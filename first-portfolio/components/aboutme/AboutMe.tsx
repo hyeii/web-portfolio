@@ -19,26 +19,22 @@ const AboutMe = () => {
       <h1>About Me</h1>
       <hr />
       <div className="my-24">
-        <p className={`${notoSerifKr.className}`}>
-          <span className={`${notoSerifKr_bold.className}`}>
-            꿈꾸던 무한한 상상
-          </span>
+        <p className="">
+          <span className="font-bold">꿈꾸던 무한한 상상</span>
           을 눈으로 볼 수 있게 구현하는 것에 매력을 느껴 <br />
           프론트엔드 개발자로 나아가고 있습니다. <br />
           <br />그 누구도 소외되지 않고{" "}
-          <span className={`${notoSerifKr_bold.className}`}>
-            모두가 경험할 수 있는 서비스
-          </span>
+          <span className="font-bold">모두가 경험할 수 있는 서비스</span>
           를 만들어
           <br /> 보다 나은 세상을 바라보고자 합니다.
           <br />
         </p>
         <div className="my-24" />
-        <span className={serif}>
+        <span className="">
           🌊 삼성 청년 소프트웨어 아카데미 9기 (2023.01.04 ~ 2023.12.29)
         </span>
         <br />
-        <span className={serif}>🌃 경희대학교 물리학과 (2016 ~ 2021)</span>
+        <span className="">🌃 경희대학교 물리학과 (2016 ~ 2021)</span>
         <br />
         <span>✉️ hyeii326@gmail.com</span>
         <div className="flex">

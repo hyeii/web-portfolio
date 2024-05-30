@@ -33,17 +33,17 @@ const ProjectCard = ({ thumbnailData }: props) => {
     >
       {hover ? (
         <>
-          <div className="w-full aspect-w-3 aspect-h-2 rounded-2xl bg-neutral-600 p-3">
-            <div className="xl:p-12 lg:p-16 h-full text-white flex flex-col justify-between">
+          <div className="w-full aspect-w-3 aspect-h-2 rounded-2xl bg-neutral-600 p-12">
+            <div className="xl:p-12 lg:p-16 p-10 h-full text-white flex flex-col justify-between">
               <div>
                 <h2
-                  className={`${song_myung.className} text-3xl font-extrabold`}
+                  className={`${song_myung.className} lg:text-3xl text-2xl font-extrabold`}
                 >
                   {thumbnailData.title}
                 </h2>
-                <span className={serif}>{thumbnailData.text}</span>
+                <span className="">{thumbnailData.text}</span>
               </div>
-              <div className="flex justify-center">
+              <div className="flex justify-start">
                 <Link className="animated-arrow" href={thumbnailData.link}>
                   <span className="the-arrow -left">
                     <span className="shaft"></span>
@@ -60,23 +60,27 @@ const ProjectCard = ({ thumbnailData }: props) => {
           </div>
         </>
       ) : (
-        <div className="flex flex-wrap flex-col justify-end p-3">
-          <div>
+        <div className="flex flex-wrap flex-col justify-between p-3">
+          <div className="">
             <Image
               src={`${thumbnailData.imagesrc}`}
               alt="hot stock"
-              className="rounded-t-2xl top-0"
+              className="rounded-t-2xl"
               layout="fill"
               objectFit="contain"
               objectPosition="top"
             />
           </div>
-          <div className="p-3 absolute bottom-2">
-            <h2 className={`${song_myung.className} text-2xl font-extrabold`}>
+          <div className="lg:p-3 p-2/3">
+            <h2
+              className={`${song_myung.className} lg:text-2xl text-base font-extrabold`}
+            >
               {thumbnailData.title}
             </h2>
             <p>
-              <span className={serif}>{thumbnailData.subtitle}</span>
+              <span className="lg:text-base text-sm">
+                {thumbnailData.subtitle}
+              </span>
             </p>
           </div>
         </div>
