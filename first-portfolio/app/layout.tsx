@@ -24,9 +24,9 @@ export default function RootLayout({
       />
       <body className={inter.className}>
         <RecoilRootWrapper>
-          <main className="flex h-screen">
+          <main className="lg:flex h-screen  ">
             <SideBar />
-            <div className="bg-[#363636] text-white p-[5vw] w-full overflow-auto">
+            <div className="bg-[#363636] text-white p-[5vw] w-full overflow-auto h-full">
               {children}
             </div>
           </main>
