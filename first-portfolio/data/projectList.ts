@@ -165,12 +165,14 @@ export const p3Detail: projectType = {
   ],
   githubLink: "https://github.com/hyeii/book-donations",
   images: [
-    "/p2/p2_main.png",
-    "/p2/p2_studyrooms.png",
-    "/p2/p2_ready.png",
-    "/p2/p2_studyFriend.png",
-    "/p2/p2_interviewee.png",
-    "/p2/p2_mypage.png",
+    "/p3/p3_onboard.jpeg",
+    "/p3/p3_kakao.jpeg",
+    "/p3/p3_mainRanking.png",
+    "/p3/p3_bookInfo.png",
+    "/p3/p3_area.png",
+    "/p3/p3_bookEntr.png",
+    "/p3/p3_like.jpeg",
+    "/p3/p3_auto.jpeg",
   ],
 };
 
@@ -206,11 +208,11 @@ export const p4Detail: projectType = {
   ],
   githubLink: "https://github.com/DailyMate/DailyMate",
   images: [
-    "/p2/p2_main.png",
-    "/p2/p2_studyrooms.png",
-    "/p2/p2_ready.png",
-    "/p2/p2_studyFriend.png",
-    "/p2/p2_interviewee.png",
-    "/p2/p2_mypage.png",
+    "/p4/p4_dailymate.png",
+    "/p4/p4_account.png",
+    "/p4/p4_addaccount.png",
+    "/p4/p4_diary.png",
+    "/p4/p4_otherdiary.png",
+    "/p4/p4_writediary.png",
   ],
 };
