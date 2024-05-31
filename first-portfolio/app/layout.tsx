@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Noto_Serif_KR } from "next/font/google";
 import "./globals.scss";
 import SideBar from "@/components/sidebar/SideBar";
 import RecoilRootWrapper from "@/components/context/RecoilWrapper";
 
-const inter = Inter({ subsets: ["latin"] });
+const notoSerifKr = Noto_Serif_KR({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "윤혜민의 포트폴리오",
@@ -22,7 +25,7 @@ export default function RootLayout({
         name="google-site-verification"
         content="05aWC6e41zzIGNNxbQ5ADhDKysMMK6q5_k87zd8_9bc"
       />
-      <body className={inter.className}>
+      <body className={notoSerifKr.className}>
         <RecoilRootWrapper>
           <main className="lg:flex h-screen  ">
             <SideBar />

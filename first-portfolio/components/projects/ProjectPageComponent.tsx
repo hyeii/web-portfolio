@@ -1,7 +1,6 @@
 import { projectType } from "@/types/types";
 import { Roboto, Roboto_Mono } from "next/font/google";
 import ImageList from "../images/ImageList";
-import { p1Images } from "@/data/imageList";
 
 const roboto = Roboto({
   weight: "900",
